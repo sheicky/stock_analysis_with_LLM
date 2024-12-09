@@ -2,6 +2,8 @@
 # Stock Analysis with LLMs: Research Automation for Quantitative Investment  
 
 This repository contains a cutting-edge project exploring the use of **Large Language Models (LLMs)** to gain a competitive advantage in stock selection. The system is built to automate research and streamline the process of identifying promising investment opportunities by analyzing vast amounts of textual data and market metrics.  
+![image](https://github.com/user-attachments/assets/6645bebb-240d-47f7-a768-aa3831fc375e)
+
 
 ## Project Overview  
 

@@ -1,0 +1,11 @@
+streamlit
+groq
+pinecone-client
+langchain
+langchain-pinecone
+sentence-transformers
+plotly
+yfinance
+python-dotenv
+openai
+scikit-learn 

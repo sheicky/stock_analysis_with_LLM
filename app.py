@@ -77,8 +77,8 @@ if not st.session_state.data_initialized:
             if company_tickers:
                 tickers_to_process = [company_tickers[num]['ticker'] 
                                     for num in company_tickers.keys()]
-                # Process first 50 companies for demo purposes
-                parallel_process_stocks(tickers_to_process[:50])
+                # Process all companies
+                parallel_process_stocks(tickers=tickers_to_process)
                 st.session_state.data_initialized = True
                 st.success("✅ Database initialized successfully!")
                 st.rerun()
@@ -117,7 +117,7 @@ with st.sidebar:
             if company_tickers:
                 tickers_to_process = [company_tickers[num]['ticker'] 
                                     for num in company_tickers.keys()]
-                parallel_process_stocks(tickers_to_process[:50])
+                parallel_process_stocks(tickers=tickers_to_process)
                 st.success("✅ Stock data updated successfully!")
             else:
                 st.error("Failed to fetch company tickers")
@@ -160,7 +160,7 @@ if search_button and query:
             elif 'Market Cap:' in line:
                 current_company['market_cap'] = float(line.split(':')[1].strip().replace(',', ''))
             elif 'Description:' in line:
-                current_company['description'] = line.split(':')[1].strip()
+                current_company['Business Summary'] = line.split(':')[1].strip()
         
         if current_company:
             companies.append(current_company)
@@ -213,7 +213,7 @@ if search_button and query:
                     <div class="company-card">
                         <div class="company-name">{company['name']}</div>
                         <div class="metric-value">Market Cap: ${company['market_cap']:,.2f}B</div>
-                        <p>{company['description']}</p>
+                        <p>{company['Business Summary']}</p>
                     </div>
                     """, unsafe_allow_html=True)
 

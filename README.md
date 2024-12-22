@@ -11,8 +11,7 @@ The project focuses on building an intelligent **Research Automation System** ca
 - Understanding **natural language queries** to identify relevant stocks (e.g., *"What are companies that build data centers?"*).  
 - Enabling advanced filtering and search capabilities for all stocks listed on the **New York Stock Exchange (NYSE)** based on key metrics, including **Market Capitalization**, **Volume**, **Sector**, and more.  
 - Leveraging state-of-the-art **AI technologies** to bridge the gap between textual data analysis and actionable investment insights.  
-
-This innovative system positions Company X as a leader in leveraging AI for smarter and faster decision-making in stock selection.  
+ 
 
 ---
 
